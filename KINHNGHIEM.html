@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>INFO</title>
+
+        <style>
+        /* Phần header*/
+        header {
+            background-color: #7c3aed;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+        header h1 {
+            margin: 5px;
+            font-size: 28px;
+        }
+        /* Phần side bar*/
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            background-color: #ddd6fe;
+            width: 220px;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+        nav a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #4c1d95;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            background-color: #c4b5fd;
+        }
+        nav a.active {
+            background-color: #fef3c7;
+            color: #b45309;
+            font-weight: bold;
+        }
+        
+
+        /* Phần dashboard = body + 2 card + image */
+        body {
+            background-color: #ede9fe;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main { 
+            padding: 20px;
+            flex: 1;
+        }
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .my-image img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .info-text {
+            flex: 1;
+        }
+        .card1 {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+            }
+
+        
+        /* Footer */
+        footer {
+            background-color: #4c1d95;
+            color: #e9d5ff;
+            text-align: center;
+            padding: 12px;
+            }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>✨Kinh nghiệm đã có</h1>
+        </header>
+
+        <!-- mục lục -->
+        <div class="layout">
+            <nav>
+                <a href="INFO.html">🏠 INFO</a>
+                <a href="DUAN.html">💼 Dự Án</a>
+                <a href="KINHNGHIEM.html"class="active">🏢 Kinh Nghiệm</a>
+                <a href="SOTHICH.html">🎯 Sở Thích</a>
+                <a href="THEMANH.html">💪 Thế Mạnh</a>
+                <a href="SACHYEUTHICH.html">📚 Sách Yêu Thích</a>
+                <a href="CHUNGCHI.html">🏅 Chứng Chỉ</a>
+                <a href="GALLERY.html">🖼️ Gallery</a>
+            </nav>
+
+            <main>
+    
+                <div class="card1">
+                    <h2>🏢 Kiến tập tại NAB</h2>
+                    <p><strong>Công ty: </strong>NAB (National Australia Bank)</p>
+                    <p><strong>Vị trí: </strong>Software Engineer</p>
+                    <p><strong>Mô tả: </strong>Quynn đã có 10 tuần kiến tập trong khóa Wecamp Batch 12
+                    cùng với 45 bạn khác từ những trường khác nhau. Trong khoảng
+                    thời gian này, Quynn đã được các anh chị trong công ty training
+                    về nhiều lĩnh vực kiến thức khác nhau: frontend, backend,
+                    Network, Operating System, API, .... Quynn đã trải qua vòng
+                    English assessment và codility (tiếc là không đậu 😭). Sắp tới
+                    Quynn sẽ làm 1 project với các chị và bạn cùng nhóm, topic do
+                    công ty đưa nên Quynn cũng chưa biết. Dù quãng thời gian
+                    training khá ngắn nhưng Quynn đã học được rất nhiều kiến thức
+                    mới và làm quen được với rất nhiều người. </p>
+                    </p>
+                </div>
+            </main>
+        </div>
+        <footer>
+            This website belongs to Quynh
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* Phần header*/
+        header {
+            background-color: #7c3aed;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+        header h1 {
+            margin: 5px;
+            font-size: 28px;
+        }
+
+        /* Phần side bar*/
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            background-color: #ddd6fe;
+            width: 220px;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+        nav a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #4c1d95;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            background-color: #c4b5fd;
+        }
+        nav a.active {
+            background-color: #fef3c7;
+            color: #b45309;
+            font-weight: bold;
+        }
+        
+
+        /* Phần dashboard = body + 3 card + image */
+        body {
+            background-color: #ede9fe;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main { 
+            padding: 20px;
+            flex: 1;
+        } 
+        .card h2 { 
+            color: #b45309; 
+            margin-top: 0; 
+        }
+        .card1,
+        .card2,
+        .card3 {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+            }
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .info-text {
+            flex: 1;
+        }
+        .my-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4c1d95;
+            color: #e9d5ff;
+            text-align: center;
+            padding: 12px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Chứng chỉ đã có</h1>
+        </header>
+
+        <div class="layout">
+            <nav>
+                <a href="INFO.html">🏠 INFO</a>
+                <a href="DUAN.html">💼 Dự Án</a>
+                <a href="KINHNGHIEM.html">🏢 Kinh Nghiệm</a>
+                <a href="SOTHICH.html">🎯 Sở Thích</a>
+                <a href="THEMANH.html">💪 Thế Mạnh</a>
+                <a href="SACHYEUTHICH.html">📚 Sách Yêu Thích</a>
+                <a href="CHUNGCHI.html" class="active">🏅 Chứng Chỉ</a>
+                <a href="GALLERY.html">🖼️ Gallery</a>
+            </nav>
+
+            <main>
+                <!-- CHỨNG CHỈ 1 -->
+                <div class="card1">
+                    <h2>🏅GIÁO DỤC QUỐC PHÒNG VÀ AN NINH</h2>
+                    <div class="about-content">
+                        <div class="my-image">
+                            <img
+                                src="images\ảnh chứng chỉ GDQP&AN.jpg"
+                                alt="Ảnh CHỨNG CHỈ 2"
+                                width="200"
+                                height="300">
+                        </div>
+                        <div class="info-text">
+                            <p><strong>Quốc phòng và an ninh</strong></p>
+                            <p>Đơn vị: Trung tâm giáo dục quốc phòng và an
+                                ninh</p>
+                            <p>Ngày cấp: 30/10/2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sách 2 -->
+                <div class="card2">
+                    <h2>🏅 IELTS</h2>
+                    <div class="about-content">
+                        <div class="my-image">
+                            <img
+                                src="images\ảnh chứng chỉ ielts.jpg"
+                                alt="Ảnh CHỨNG CHỈ 1"
+                                width="200"
+                                height="300">
+                        </div>
+                        <div class="info-text">
+                            <p>OVERALL: 7.0</p>
+                            <p>Đơn vị thi: British Council</p>
+                            <p>Ngày thi: 5/8/2023</p>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <footer>This website belongs to Quynh</footer>
+    </body>
+</html>

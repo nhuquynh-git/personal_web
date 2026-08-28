@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>INFO</title>
+
+        <style>
+        /* Phần header*/
+        header {
+            background-color: #7c3aed;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+        header h1 {
+            margin: 5px;
+            font-size: 28px;
+        }
+
+        /* Phần side bar*/
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            background-color: #ddd6fe;
+            width: 220px;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+        nav a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #4c1d95;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            background-color: #c4b5fd;
+        }
+        nav a.active {
+            background-color: #fef3c7;
+            color: #b45309;
+            font-weight: bold;
+        }
+        
+
+        /* Phần dashboard = body + 3 card */
+        body {
+            background-color: #ede9fe;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main { 
+            padding: 20px;
+            flex: 1;
+        }
+        .card h2 { 
+            color: #b45309; 
+            margin-top: 0; 
+        }
+        .card1,
+        .card2,
+        .card3 {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+            }
+
+        /* Footer */
+        footer {
+            background-color: #4c1d95;
+            color: #e9d5ff;
+            text-align: center;
+            padding: 12px;
+            }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>✨Những dự án đã hoàn thành</h1>
+        </header>
+
+        <!-- mục lục -->
+        <div class="layout">
+            <nav>
+                <a href="INFO.html">🏠 INFO</a>
+                <a href="DUAN.html" class="active">💼 Dự Án</a>
+                <a href="KINHNGHIEM.html">🏢 Kinh Nghiệm</a>
+                <a href="SOTHICH.html">🎯 Sở Thích</a>
+                <a href="THEMANH.html">💪 Thế Mạnh</a>
+                <a href="SACHYEUTHICH.html">📚 Sách Yêu Thích</a>
+                <a href="CHUNGCHI.html">🏅 Chứng Chỉ</a>
+                <a href="GALLERY.html">🖼️ Gallery</a>
+            </nav>
+
+            <main>
+                <!-- DỰ ÁN 1 -->
+                <div class="card2">
+                    <h2>💼 Phần mềm quản lí cửa hàng game</h2>
+                    <p><strong>Mô tả: </strong>phần mềm cho phép nhân viên thao tác bán/cho thuê CD, ROM,
+                        cho phép xem lại lịch sử mua/thuê của từng khách hàng, cho phép
+                        xem doanh thu và lịch sử giao dịch</p>
+                    <p><strong>Công nghệ: </strong>Java</p>
+                    <p><strong>Vai trò: </strong> Design UI/UX</p>
+                    <p>Link:
+                        <a
+                            href="https://github.com/baonguyen-gith/java-game-store-management">
+                            GameStoreManagement
+                        </a>
+                    </p>
+                    </p>
+                </div>
+                <!-- DỰ ÁN 2-->
+                <div class="card2">
+                    <h2>💼 Phần mềm quản lí cửa hàng pallet</h2>
+                    <p><strong>Mô tả: </strong> phần mềm cho phép nhân viên thao tác bán pallet, cho phép
+                        xem lại lịch sử mua của từng khách hàng, cho phép xem doanh thu
+                        và lịch sử giao dịch</p>
+                    <p><strong>Công nghệ: </strong>Java</p>
+                    <p><strong>Vai trò: </strong>Thiết kế hệ thống, vẽ sơ đồ activity, sequence
+                        diagram</p>
+                    <p><strong>Link: </strong>
+                        <a
+                            href="https://drive.google.com/drive/u/6/folders/1mqTQXbGaC9ZtPQr2jGhnlzby95Jdzh3z">
+                            PalletManagement
+                        </a>
+            </p>
+                </div>
+                
+                <!-- DỰ ÁN 3-->
+                <div class="card3">
+                    <h2>💼 Web TODOX</h2>
+                    <p><strong>Mô tả: </strong>web cho phép thêm xóa sửa các nhiệm vụ, cho phép đổi trạng
+                        thái từ đang làm thành đã hoàn thành và ngược lại, lưu lại thời
+                        gian đã hoàn thành</p>
+                    <p><strong>Công nghệ: </strong>HTML, CSS, JavaScript</p>
+                    <p><strong>Vai trò: </strong>Developer</p>
+                    <p><strong>Link: </strong>
+                        <a
+                            href="//project1-todo-8was.onrender.com/">
+                            ToDo
+                        </a>
+                    </p>
+                </div>
+
+            </main>
+        </div>
+        <footer>
+            This website belongs to Quynh
+        </footer>
+    </body>
+</html>

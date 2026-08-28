@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <style>
+        /* Phần header*/
+        header { 
+            background-color: #7c3aed; 
+            color: white; 
+            text-align: center; 
+            padding: 12px; 
+        }
+        header h1 {
+            margin: 5px;
+            font-size: 28px;
+        }
+
+        /* Phần side bar*/
+        .layout { 
+            display: flex; 
+        }
+        nav { 
+            background-color: #ddd6fe; 
+            width: 220px; 
+            min-height: 100vh; 
+            padding: 20px 10px; 
+        }
+        nav a { 
+            display: block; 
+            padding: 8px 10px; 
+            margin-bottom: 5px; 
+            text-decoration: none; 
+            color: #4c1d95; 
+            border-radius: 6px; 
+        }
+        nav a:hover { 
+            background-color: #c4b5fd; 
+        }
+        nav a.active { 
+            background-color: #fef3c7; 
+            color: #b45309; 
+            font-weight: bold; 
+        }
+
+        /* Phần dashboard = body + 3 card */
+        body { 
+            background-color: #ede9fe; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+        }
+        main { 
+            padding: 20px; 
+            flex: 1; 
+        }
+        .card h2 { 
+            color: #b45309; 
+            margin-top: 0; 
+        }    
+        .card1,.card2 { 
+            background-color: white; 
+            border-radius: 10px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+        }
+
+        /* Grid ảnh */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid #ddd6fe;
+            transition: transform 0.2s;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.03);
+            border-color: #7c3aed;
+        }
+
+            /* Lightbox (modal) */
+        .lightbox {
+            display: none;            /* Ẩn mặc định */
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.show {
+            display: flex;            /* Hiện khi click */
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 10px;
+            border: 3px solid white;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px; right: 30px;
+            font-size: 36px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .lightbox-close:hover {
+            color: #c4b5fd;
+        }
+        
+        /* Footer */
+        footer { 
+            background-color: #4c1d95; 
+            color: #e9d5ff; 
+            text-align: center; 
+            padding: 12px; }
+
+    
+  </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Những kỉ niệm đáng nhớ 🖼️</h1>
+        </header>
+
+        <div class="layout">
+            <nav>
+                <a href="INFO.html">🏠 INFO</a>
+                <a href="DUAN.html">💼 Dự Án</a>
+                <a href="KINHNGHIEM.html">🏢 Kinh Nghiệm</a>
+                <a href="SOTHICH.html">🎯 Sở Thích</a>
+                <a href="THEMANH.html">💪 Thế Mạnh</a>
+                <a href="SACHYEUTHICH.html">📚 Sách Yêu Thích</a>
+                <a href="CHUNGCHI.html">🏅 Chứng Chỉ</a>
+                <a href="GALLERY.html" class="active">🖼️ Gallery</a>
+            </nav>
+
+            <main>
+
+                <div class="card1">
+                    <h2>🎓 Tốt nghiệp cấp 3</h2>
+                    <p><strong>Thời gian:</strong> 22/05/2024 &nbsp;|&nbsp;
+                        <strong>Trường:</strong> THPT Trấn Biên</p>
+                    <p>Kết thúc những năm tháng cấp 3 đáng nhớ 🥹</p>
+                    <!-- Ảnh click để phóng to -->
+                    <div class="photo-grid">
+                        <img src="images/ảnh kỉ yếu.jpg"
+                            alt="Ảnh kỉ yếu tốt nghiệp cấp 3" loading="lazy"
+                            onclick="openLightbox(this.src, this.alt)">
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <h2>🌊 Vũng Tàu Trip</h2>
+                    <p><strong>Địa điểm:</strong> Vũng Tàu</p>
+                    <p>Lần đầu đi chơi xa cùng bạn bè, không có người nhà — một
+                        cột mốc đáng nhớ! 🏖️</p>
+                    <div class="photo-grid">
+                        <img src="images/ảnh đi VT.jpg"
+                            alt="Ảnh chuyến đi Vũng Tàu cùng bạn bè"
+                            loading="lazy"
+                            onclick="openLightbox(this.src, this.alt)">
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <footer>This website belongs to Quynh</footer>
+
+        <!-- LIGHTBOX (modal phóng to) -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+            <img id="lightbox-img" src alt>
+        </div>
+
+        <script>
+  // Mở lightbox: gán src và alt cho ảnh bên trong, rồi thêm class "show"
+  function openLightbox(src, alt) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-img').alt = alt;
+    document.getElementById('lightbox').classList.add('show');
+  }
+
+  // Đóng lightbox: xóa class "show"
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('show');
+  }
+</script>
+
+    </body>
+</html>

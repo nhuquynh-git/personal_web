@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* Phần header*/
+        header {
+            background-color: #7c3aed;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+        header h1 {
+            margin: 5px;
+            font-size: 28px;
+        }
+
+        /* Phần side bar*/
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            background-color: #ddd6fe;
+            width: 220px;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+        nav a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #4c1d95;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            background-color: #c4b5fd;
+        }
+        nav a.active {
+            background-color: #fef3c7;
+            color: #b45309;
+            font-weight: bold;
+        }
+        
+
+        /* Phần dashboard = body + 3 card + image */
+        body {
+            background-color: #ede9fe;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main { 
+            padding: 20px;
+            flex: 1;
+        } 
+        .card h2 { 
+            color: #b45309; 
+            margin-top: 0; 
+        }
+        .card1,
+        .card2,
+        .card3 {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+            }
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .info-text {
+            flex: 1;
+        }
+        .my-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4c1d95;
+            color: #e9d5ff;
+            text-align: center;
+            padding: 12px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Sách Quynn yêu thích</h1>
+        </header>
+
+        <div class="layout">
+            <nav>
+                <a href="INFO.html">🏠 INFO</a>
+                <a href="DUAN.html">💼 Dự Án</a>
+                <a href="KINHNGHIEM.html">🏢 Kinh Nghiệm</a>
+                <a href="SOTHICH.html">🎯 Sở Thích</a>
+                <a href="THEMANH.html">💪 Thế Mạnh</a>
+                <a href="SACHYEUTHICH.html" class="active">📚 Sách Yêu Thích</a>
+                <a href="CHUNGCHI.html">🏅 Chứng Chỉ</a>
+                <a href="GALLERY.html">🖼️ Gallery</a>
+            </nav>
+
+            <main>
+                <!-- SÁCH 1 -->
+                <div class="card1">
+                    <h2>📖 Trên đường băng</h2>
+                    <div class="about-content">
+                        <div class="my-image">
+                            <img
+                                src="images\SÁCH 1.jpg"
+                                alt="Bìa sách Trên đường băng"
+                                width="200"
+                                height="300">
+                        </div>
+                        <div class="info-text">
+                            <p><strong>Tác giả: </strong> Tony buổi sáng</p>
+                            <p><strong>Cảm nhận: </strong> Nội dung sách thì
+                                Quynn đã không còn nhớ rõ nữa do đã đọc lâu quá
+                                rồi, không có thời gian đọc lại vì deadline anh
+                                Nhựt dí quá sát rồi 😭. Chỉ nhớ cuốn sách này kể
+                                về những chuyện vụn vặt trong cuộc sống của tác
+                                giả và những người bạn. Những câu chuyện từ gần
+                                gũi vi mô lấy context từ những người bạn đến xa
+                                xăm vĩ mô lấy context từ những người nước ngoài,
+                                trong đó lồng ghép cả những góc nhìn, suy nghĩ
+                                của tác giả. Túm lại thì đây là một cuốn sách
+                                hay và Quynn recommend cho mọi người đọc nếu có
+                                thời gian nhé!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sách 2 -->
+                <div class="card2">
+                    <h2>📖 Khi Ta Thay Đổi, Thế Giới Sẽ Đổi Thay</h2>
+                    <div class="about-content">
+                        <div class="my-image">
+                            <img
+                                src="images/SÁCH 2.jpg"
+                                alt="Bìa sách Khi Ta Thay Đổi Thế Giới Sẽ Đổi Thay"
+                                width="100"
+                                loading="lazy">
+                        </div>
+                        <div class="info-text">
+                            <p><strong>Tác giả:</strong> Karen Casey</p>
+                            <p><strong>Cảm nhận:</strong> Cuốn sách truyền
+                                cảm hứng về việc thay đổi bản thân từ bên
+                                trong. Mỗi trang là một suy ngẫm nhỏ giúp
+                                mình nhìn lại cách mình phản ứng với cuộc
+                                sống. Rất phù hợp để đọc mỗi sáng!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sách 3 —  -->
+                <div class="card3">
+                    <h2>📖 Nhà giả kim</h2>
+                    <div class="about-content">
+                        <div class="my-image">
+                            <img
+                                src="images/SÁCH 3.jpg"
+                                alt="Bìa sách Nhà giả kim"
+                                width="100"
+                                loading="lazy">
+                        </div>
+                        <div class="info-text">
+                            <p><strong>Tác giả:</strong> Dale Carnegie</p>
+                            <p><strong>Cảm nhận:</strong> Cuốn sách kinh
+                                điển về kỹ năng giao tiếp và xây dựng mối
+                                quan hệ. Những nguyên tắc trong sách tuy đơn
+                                giản nhưng rất thực tế và dễ áp dụng vào
+                                cuộc sống hàng ngày. Đây là một trong những
+                                cuốn sách hay nhất mọi thời đại!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <footer>This website belongs to Quynh</footer>
+    </body>
+</html>

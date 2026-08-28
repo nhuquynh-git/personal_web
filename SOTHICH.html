@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+        /* Phần header*/
+        header {
+            background-color: #7c3aed;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+        header h1 {
+            margin: 5px;
+            font-size: 28px;
+        }
+
+        /* Phần side bar*/
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            width: 220px;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+        nav a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #4c1d95;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            background-color: #c4b5fd;
+        }
+        nav a.active {
+            background-color: #fef3c7;
+            color: #b45309;
+            font-weight: bold;
+        }
+        
+
+        /* Phần dashboard = body + 2 card + image */
+        body {
+            background-color: #ede9fe;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main { 
+            padding: 20px;
+            flex: 1;
+        }
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .my-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .info-text {
+            flex: 1;
+        }
+        .card h2 { 
+            color: #b45309; 
+            margin-top: 0; 
+        }
+        .card1,
+        .card2 {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+            }
+
+        
+        /* Footer */
+        footer {
+            background-color: #4c1d95;
+            color: #e9d5ff;
+            text-align: center;
+            padding: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>✨Sở thích của Quynn</h1>
+        </header>
+
+        <div class="layout">
+            <nav>
+                <a href="INFO.html">🏠 INFO</a>
+                <a href="DUAN.html">💼 Dự Án</a>
+                <a href="KINHNGHIEM.html">🏢 Kinh Nghiệm</a>
+                <a href="SOTHICH.html" class="active">🎯 Sở Thích</a>
+                <a href="THEMANH.html">💪 Thế Mạnh</a>
+                <a href="SACHYEUTHICH.html">📚 Sách Yêu Thích</a>
+                <a href="CHUNGCHI.html">🏅 Chứng Chỉ</a>
+                <a href="GALLERY.html">🖼️ Gallery</a>
+            </nav>
+
+            <main>
+                <!-- Sở thích 1 -->
+                <div class="card1">
+                    <h2>🏀 BÓNG RỔ </h2>
+                    <div class="about-content">
+                        <!-- Ảnh bên trái -->
+                        <div class="my-image">
+                            <img
+                                src="images\ảnh huy chương.jpg"
+                                alt="Ảnh huy chương"
+                                width="400"
+                                height="300">
+                        </div>
+                        <!-- Thông tin bên phải -->
+                        <div class="info-text">
+                            <p><strong>Mô tả: </strong>mình bắt đầu chơi bóng rổ
+                                từ cấp 3, đến nay cũng có kha khá thành tựu
+                            </p>
+                            <p>🥈 Huy chương bạc cấp trường 2024</p>
+                            <p>🥇 Huy chương vàng cấp tỉnh 2024</p>
+                            <p>🥈Huy chương bạc hội thao sinh viên 2026</p>
+                            <p>Và một số giải lớn nhỏ khác</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sở thích 2 -->
+                <div class="card2">
+                    <h2>🏃‍♀️ Chạy bộ </h2>
+                    <p><strong>Mô tả: </strong>chỉ là 1 sở thích nhỏ khi có
+                        nhiều
+                        thời
+                        gian, đến nay chưa có thành tựu gì lớn</p>
+                    <p>Hi vọng sau này có đủ thời gian và thể lực để tham gia
+                        Triathlon</p>
+                </div>
+            </main>
+        </div>
+        <footer>This website belongs to Quynh</footer>
+    </body>
+</html>
