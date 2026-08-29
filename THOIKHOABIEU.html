@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thời Khóa Biểu</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            table, th, td {
+                border: 1px solid rgb(107, 2, 173);
+                border-collapse: collapse;
+                padding: 8px;
+            }
+            .Date {
+                background-color: #7c3aed;
+                color: #ffffff;
+                text-align: center;
+                font-weight: bold;
+            }
+            .subject-name {
+                font-weight: bold;
+                color: #4c197e;
+                margin-bottom: 4px;
+            }
+
+            .subject-info {
+                font-style: italic;
+                font-size: 12px;
+                color: #957eac;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>THỜI KHÓA BIỂU 📅</h1>
+        </header>
+
+        <div class="layout">
+            <nav>
+                <a href="INFO.html">🏠 INFO</a>
+                <a href="DUAN.html">💼 Dự Án</a>
+                <a href="KINHNGHIEM.html">🏢 Kinh Nghiệm</a>
+                <a href="SOTHICH.html">🎯 Sở Thích</a>
+                <a href="THEMANH.html">💪 Thế Mạnh</a>
+                <a href="SACHYEUTHICH.html">📚 Sách Yêu Thích</a>
+                <a href="CHUNGCHI.html">🏅 Chứng Chỉ</a>
+                <a href="GALLERY.html">🖼️ Gallery</a>
+                <a href="THOIKHOABIEU.html" class="active">📅 Thời Khóa Biểu</a>
+            </nav>
+
+            <main>
+
+                <div class="card">
+                    <table border="1">
+                        <!-- DATE -->
+                        <tr class="Date">
+                            <td>TIẾT</td>
+                            <td>MONDAY</td>
+                            <td>TUESDAY</td>
+                            <td>WEDNESDAY</td>
+                            <td>THURSDAY</td>
+                            <td>FRIDAY</td>
+                            <td>SATURDAY</td>
+                        </tr>
+                        <!-- tiết 1 -->
+                        <tr>
+                            <th>1</th>
+                            <th class="subject" rowspan="4">
+                                <div class="subject-name">Hoạch định nguồn lực
+                                    doanh
+                                    nghiệp</div>
+                                <div class="subject-info">ThS Huỳnh Đức
+                                    Huy<br>IS336.R13</div>
+                            </th>
+                            <th class="subject" rowspan="4">
+                                <div class="subject-name">Kho dữ liệu và
+                                    OLAP</div>
+                                <div class="subject-info">ThS Nguyễn Thị Kim
+                                    Phụng<br>IS217.R13</div>
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th class="subject" rowspan="4">
+                                <div class="subject-name">Phát triển ứng dụng
+                                    web</div>
+                                <div class="subject-info">ThS Mai Xuân
+                                    Hùng<br>IS207.R13</div>
+                            </th>
+                            <th></th>
+                        </tr>
+                        <!-- tiết 2 -->
+                        <tr>
+                            <th>2</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <!-- tiết 3 -->
+                        <tr>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <!-- tiết 4 -->
+                        <tr>
+                            <th>4</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <!-- tiết 5 -->
+                        <tr>
+                            <th>5</th>
+                            <td class="subject-info" colspan="6">---Nghỉ
+                                giữa---</td>
+                        </tr>
+                        <!-- tiết 6 -->
+                        <tr>
+                            <th>6</th>
+                            <th class="subject" rowspan="5">
+                                <div class="subject-name">Hoạch định nguồn lực
+                                    doanh
+                                    nghiệp</div>
+                                <div class="subject-info">ThS Huỳnh Đức
+                                    Huy<br>IS336.R13.1</div>
+                            </th>
+                            <th class="subject" rowspan="4">
+                                <div class="subject-name">Phân tích dữ liệu kinh
+                                    doanh</div>
+                                <div class="subject-info">TS Trần Văn Hải
+                                    Triều<br>IS403.R13</div>
+                            </th>
+                            <th class="subject" rowspan="2">
+                                <div class="subject-name">Lịch sử Đảng cộng
+                                    sản</div>
+                                <div class="subject-info">Nguyễn Văn
+                                    A<br>SS010.R11</div>
+                            </th>
+                            <th></th>
+                            <th class="subject" rowspan="5">
+                                <div class="subject-name">Phát triển ứng dụng
+                                    web</div>
+                                <div class="subject-info">ThS Mai Xuân
+                                    Hùng<br>IS207.R13.2</div>
+                            </th>
+                            <th></th>
+                        </tr>
+                        <!-- tiết 7 -->
+                        <tr>
+                            <th>7</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <!-- tiết 8 -->
+                        <tr>
+                            <th>8</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <!-- tiết 9 -->
+                        <tr>
+                            <th>9</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        </div>
+
+        <footer>This website belongs to Quynh</footer>
+    </body>
+</html>

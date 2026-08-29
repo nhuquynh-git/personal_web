@@ -4,112 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <style>
-            /* Phần header*/
-            header {
-                background-color: #7c3aed;
-                color: white;
-                text-align: center;
-                padding: 12px;
-            }
-            header h1 {
-                margin: 5px;
-                font-size: 28px;
-            }
-
-            /* Phần side bar*/
-            .layout {
-                display: flex;
-                flex: 1;
-            }
-            nav {
-                background-color: #ddd6fe;
-                width: 220px;
-                padding: 20px;
-                flex-shrink: 0;
-            }
-            nav a {
-                display: block;
-                padding: 10px;
-                margin-bottom: 5px;
-                text-decoration: none;
-                color: #4c1d95;
-                border-radius: 6px;
-            }
-            nav a:hover {
-                background-color: #c4b5fd;
-            }
-            nav a.active {
-                background-color: #fef3c7;
-                color: #b45309;
-                font-weight: bold;
-            }
-
-            /* process bar */
-            .skill-name {
-                font-weight: bold;
-                margin-bottom: 5px;
-            }
-            .progress-bar-bg {
-                background-color: #ede9fe;
-                border-radius: 20px;
-                height: 18px;
-                margin-bottom: 15px;
-                overflow: hidden;
-            }
-            .progress-bar-fill {
-                height: 100%;
-                border-radius: 20px;
-                background-color: #7c3aed;
-                display: flex;
-                align-items: center;
-                padding-left: 8px;
-                color: white;
-                font-size: 12px;
-                font-weight: bold;
-            }
-
-            /* Badge */
-            .badge {
-                display: inline-block;
-                background-color: #7c3aed;
-                color: white;
-                padding: 4px 12px;
-                border-radius: 20px;
-                font-size: 13px;
-                margin: 4px 4px 4px 0;
-            }
-            .badge.gold { background-color: #b45309; }
-            .badge.green { background-color: #15803d; }
-
-            /* Phần dashboard = body + 2 card + image */
-            body {
-                background-color: #ede9fe;
-                font-family: Arial, sans-serif;
-                margin: 0;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-            }
-            main { 
-                padding: 20px;
-                flex: 1;
-            }
-            .card h2 { 
-                color: #b45309; 
-                margin-top: 0; 
-            }
-            .card1,
-            .card2 {
-                background-color: white;
-                border-radius: 10px;
-                padding: 20px;
-                margin-bottom: 20px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                width: 100%;
-                box-sizing: border-box;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -132,11 +27,12 @@
                 <a href="SACHYEUTHICH.html">📚 Sách Yêu Thích</a>
                 <a href="CHUNGCHI.html">🏅 Chứng Chỉ</a>
                 <a href="GALLERY.html">🖼️ Gallery</a>
+                <a href="THOIKHOABIEU.html">📅 Thời Khóa Biểu</a>
             </nav>
 
             <main>
                 <!-- KĨ NĂNG CỨNG -->
-                <div class="card1">
+                <div class="card">
                     <h2>🛠️ Kỹ Năng Cứng</h2>
 
                     <p class="skill-name">English (IELTS 7.0)</p>
@@ -165,7 +61,7 @@
                 </div>
 
                 <!--  KĨ NĂNG MỀM -->
-                <div class="card2">
+                <div class="card">
                     <h2>🤝 Kỹ Năng Mềm</h2>
 
                     <p class="skill-name">Communication</p>
@@ -188,7 +84,7 @@
                 </div>
 
                 <!-- Công nghệ-->
-                <div class="card3">
+                <div class="card">
                     <h2>🏷️ Công Nghệ & Công Cụ</h2>
                     <span class="badge">Java</span>
                     <span class="badge">HTML</span>
